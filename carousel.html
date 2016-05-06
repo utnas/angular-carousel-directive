@@ -1,0 +1,24 @@
+<section id="carousel">
+  
+  <div class="view-port" style="width:100%;">
+    <ul class="slider" ng-style="{'width':ctrl.sliderwidth, 'transform':ctrl.translation}">
+      <li  ng-repeat="image in ctrl.images" ng-style="{'width':ctrl.imageWidth}" class="image">
+        <img src="http://lorempixel.com/1600/1800" style="width:100%" />
+      </li> 
+    </ul>
+
+    <div class="controls prev">
+      <div class="chevron left">
+        <a ng-click="ctrl.prev()"></a>
+      </div>
+    </div>
+    
+    <div class="controls next">
+      <div class="chevron right">
+        <a ng-click="ctrl.next()"></a>
+      </div>
+    </div>
+    
+  </div>
+  
+</section>
